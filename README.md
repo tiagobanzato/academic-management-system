@@ -1,78 +1,80 @@
-# 🎓 Sistema de Gestão Acadêmica em Python
+# Academic Management System in Python
 
-Projeto acadêmico desenvolvido em Python para a disciplina de **Raciocínio Computacional** do curso de Análise e Desenvolvimento de Sistemas.
+Academic project built in Python for the **Computational Reasoning** course of the Systems Analysis and Development degree.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![JSON](https://img.shields.io/badge/Persistência-JSON-orange?style=flat)
-![Status](https://img.shields.io/badge/Status-Concluído-green?style=flat)
+![JSON](https://img.shields.io/badge/Persistence-JSON-orange?style=flat)
+![Status](https://img.shields.io/badge/Status-Completed-green?style=flat)
 
 ---
 
-## 📋 Sobre o projeto
+## About the project
 
-Sistema de Gestão Acadêmica (SGA) com interface via terminal, que gerencia **5 módulos completos** com persistência de dados em arquivos JSON. O sistema carrega os dados automaticamente ao iniciar e salva a cada operação.
+A terminal-based Academic Management System (SGA) that manages **5 complete modules** with data persisted in JSON files. Data is loaded automatically on startup and saved after every operation.
 
 ---
 
-## 🗂️ Módulos
+## Modules
 
-| Módulo | Operações disponíveis |
+| Module | Available operations |
 |--------|----------------------|
-| 👨‍🎓 Estudantes | Incluir, Listar, Atualizar, Excluir |
-| 📚 Disciplinas | Incluir, Listar, Atualizar, Excluir |
-| 👨‍🏫 Professores | Incluir, Listar, Atualizar, Excluir |
-| 🏫 Turmas | Incluir, Listar, Atualizar, Excluir |
-| 📝 Matrículas | Incluir, Listar, Excluir |
+| Students | Create, List, Update, Delete |
+| Subjects | Create, List, Update, Delete |
+| Teachers | Create, List, Update, Delete |
+| Classes | Create, List, Update, Delete |
+| Enrolments | Create, List, Delete |
 
 ---
 
-## ⚙️ Funcionalidades técnicas
+## Technical features
 
-- **CRUD completo** em 4 dos 5 módulos
-- **Persistência em JSON** — dados salvos automaticamente a cada operação
-- **Carregamento automático** ao iniciar o sistema
-- **Validação de entradas** com `try/except` para códigos inválidos
-- **Verificação de duplicatas** antes de cadastrar novos registros
-- **Navegação por menus** aninhados com laços `while`
-- **Modularização** — cada módulo tem suas próprias funções separadas
+- **Full CRUD** in 4 of the 5 modules
+- **JSON persistence**: data saved automatically after every operation
+- **Automatic loading** on startup
+- **Input validation** with `try/except` for invalid codes
+- **Duplicate checks** before creating new records
+- **Nested menu navigation** using `while` loops
+- **Modular design**: each module has its own separate functions
 
 ---
 
-## 📁 Estrutura do projeto
+## Project structure
 
 ```
 sistema-gestao/
-├── main.py              # Código principal com todos os menus e funções
-├── estudantes.json      # Dados persistidos dos estudantes
-├── disciplinas.json     # Dados persistidos das disciplinas
-├── professores.json     # Dados persistidos dos professores
-├── turmas.json          # Dados persistidos das turmas
-└── matriculas.json      # Dados persistidos das matrículas
+├── main.py            # Main code with all menus and functions
+├── estudantes.json    # Students data
+├── disciplinas.json   # Subjects data
+├── professores.json   # Teachers data
+├── turmas.json        # Classes data
+└── matriculas.json    # Enrolments data
 ```
 
 ---
 
-## ▶️ Como rodar
+## Running locally
 
 ```bash
 python main.py
 ```
 
-Navegue pelo menu usando os números correspondentes a cada opção.
+Navigate the menu by typing the number of each option. The interface is in Portuguese.
 
 ---
 
-## 🛠️ Tecnologias
+## Tech stack
 
-- **Python** — linguagem principal
-- **JSON** — persistência de dados (`json.dump` / `json.load`)
-- **Manipulação de arquivos** — leitura e escrita com `open()`
-- **Tratamento de exceções** — `try/except` para entradas inválidas
+- **Python**: main language
+- **JSON**: data persistence (`json.dump` / `json.load`)
+- **File handling**: reading and writing with `open()`
+- **Exception handling**: `try/except` for invalid input
 
 ---
 
-## 👨‍💻 Autor
+## Author
 
-**Tiago Banzato** — Estudante de ADS
+**Tiago Banzato**  
+Software developer · Dublin, Ireland
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-tiagobanzato-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/tiagobanzato)
+[![GitHub](https://img.shields.io/badge/GitHub-tiagobanzato-black?logo=github)](https://github.com/tiagobanzato)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-banzato-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/banzato)
